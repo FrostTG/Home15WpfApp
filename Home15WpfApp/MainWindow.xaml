@@ -1,0 +1,289 @@
+﻿<Window x:Class="Home15WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Home15WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docViewer">
+            <FlowDocument>
+                <Paragraph FontSize="20" FontFamily="ComicSans" FontWeight="Bold" TextAlignment="Center">
+                    <Hyperlink NavigateUri="https://www.patee.ru/recipes/barbecues/view/?id=1699694">Люля-кебаб</Hyperlink>
+                </Paragraph>
+                <Paragraph>
+                    <Floater Width="250" HorizontalAlignment="Right">
+                        <BlockUIContainer>
+                            <Image Source="Data/0.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    <Italic>Сегодня мы приготовим вкусный и сочный люля-кебаб, который понравится и взрослым, и детям.
+Достойная альтернатива шашлыку, да и просто, невероятно вкусное блюдо!</Italic>
+                </Paragraph>
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            Белки 13,92 г
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Жиры 24,88 г
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Углеводы 1,88 г
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph>
+                    Ингредиенты:
+                </Paragraph>
+                <List MarkerStyle="Box">
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink NavigateUri="https://www.patee.ru/cookingpedia/foods/meat/beef/">Говядина</Hyperlink> 500 г
+                            <Image Source="/Data/govyadina.jpg" Width="20" Height="20"/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Баранина 500 г
+                            <Image Source="/Data/baranina.jpg" Width="20" Height="20"/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Сало 300 г
+                            <Image Source="/Data/salo.jpg" Width="20" Height="20"/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Лук репчатый 2 шт.
+                            <Image Source="/Data/luk.jpg" Width="20" Height="20"/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Барбарис сушеный 10 г
+                            <Image Source="/Data/barbaris.jpg" Width="20" Height="20"/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Перец душистый 5 г
+                            <Image Source="/Data/perec.jpg" Width="20" Height="20"/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Перец черный горошком 3 г
+                            <Image Source="/Data/black perec.jpg" Width="20" Height="20"/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Зира (кумин) 3 г
+                            <Image Source="/Data/zira.jpg" Width="20" Height="20"/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Вода 150 мл
+                            <Image Source="/Data/water.jpg" Width="20" Height="20"/>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Чеснок 5 зуб.
+                            <Image Source="/Data/chesnok.jpg" Width="20" Height="20"/>
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Section FontSize="18">
+                    <Table>
+                        <Table.Columns>
+                            <TableColumn Width="0.25*"/>
+                            <TableColumn Width="*"/>
+                            <TableColumn Width="*"/>
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center" FontWeight="Bold" FontSize="18">
+                                        № Шага
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center" FontWeight="Bold" FontSize="18">
+                                        Фото
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph TextAlignment="Center" FontWeight="Bold" FontSize="18">
+                                        Описание
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Шаг 1
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Image Source="Data\1.jpg"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Толчем специи
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Шаг 2
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Image Source="Data\2.jpg"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Соединяем с фаршем и хорошо вымешиваем
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Шаг 3
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Image Source="Data\3.jpg"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Мелко нарезаем лук и чеснок
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Шаг 4
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Image Source="Data\4.jpg"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Добавляем лук, чеснок и воду и снова перемешиваем
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Шаг 5
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Image Source="Data\5.jpg"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Закладываем барбарис и убираем в холод на ночь
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Шаг 6
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Image Source="Data\6.jpg"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Формируем колбаски и нанизываем на шампур
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Шаг 7
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Image Source="Data\7.jpg"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Обжариваем на интенсивном жару, часто переворачивая
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell>
+                                    <Paragraph>
+                                        Шаг 8
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        <Image Source="Data\8.jpg"/>
+                                    </Paragraph>
+                                </TableCell>
+                                <TableCell>
+                                    <Paragraph>
+                                        Сервируем на лаваше, с луком и зеленью
+                                    </Paragraph>
+                                </TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table>
+                </Section>
+                <BlockUIContainer>
+                    <StackPanel>
+                        <TextBlock Text="Нажми, если понравился рецепт"/>
+                        <Button Content="Нравится"/>
+                    </StackPanel>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть" Width="100" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Width="100" Click="Button_Click_1"/>
+            <Button Content="Очистить" Width="100" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
